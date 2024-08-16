@@ -826,7 +826,9 @@ function Library:CreateWindow(windowname,windowinfo)
     return PageYep
 end
 
-function Library:ToggleUI()
+local LibName = tostring(math.random(1, 100))..tostring(math.random(1,50))..tostring(math.random(1, 100))
+
+function Kavo:ToggleUI()
     if game.CoreGui[LibName].Enabled then
         game.CoreGui[LibName].Enabled = false
     else
